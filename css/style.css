@@ -440,5 +440,109 @@ h3.my-profession{
     font-weight: 500;
     color: var(--text-black-700);
     line-height: 25px;
+}
 
+/* Portfolio Section Styling */
+.portfolio .portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--text-black-900);
+}
+.portfolio .portfolio-heading i{
+    margin-right: 10px;
+}
+.portfolio .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33%;
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-item .portfolio-item-inner img{
+    max-width: 100%;
+    display: block;
+}
+.portfolio .portfolio-item .portfolio-item-inner{
+    border: 5px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Contact Section Styling */
+.contact .contact-title{
+    font-size: 24px;
+    color: var(--face-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact .contact-sub-title {
+    font-size: 16px;
+    text-align: center;
+    color: var(--text-black-900);
+    margin-bottom: 50px;
+}
+.contact .contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 50PX;
+}
+.contact .contact-info-item .icon{
+    display: block;
+}
+.contact .contact-info-item .icon .fa-solid{
+    font-size: 24px;
+    color: var(--face-color);
+}
+.contact .contact-info-item h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin: 15px 0 5px;
+    text-transform: capitalize;
+}
+.contact .contact-info-item p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .contact-form .col-12{
+    flex: 100%;
+    max-width: 100%;
+}
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    background:var(--bg-black-100);
+    border: 1.5px solid var(--bg-black-50);
+    border-radius: 25px;
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(59, 56, 103, 0.25);
+}
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+.contact .contact-form .btn{
+    height: 50px;
+    padding: 0 50px;
 }
