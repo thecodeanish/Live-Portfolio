@@ -7,10 +7,13 @@
     <title>Personal Portfolio</title>
     <!-- Link CSS files -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/face-colors.css">
+    <!-- link face color css file -->
+    <link rel="stylesheet" href="/css/face-color.css">
+    <!-- link font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- Auto Typing in Home section -->
+    <!-- Link Style switcher css file -->
+    <link rel="stylesheet" href="/css/style-switcher.css">
+    <!-- Auto Typing library in Home section -->
     <script src="/typing/autotyping.min.js"></script>
 </head>
 
@@ -34,6 +37,7 @@
             </div>
             <div class="social-media">
                 <ul class="social-icons">
+
                     <li><a href="https://github.com/thecodeanish" target="_blank"><i
                                 class="fa-brands fa-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/anish-kumar-anish/?trk=opento_sprofile_details"
@@ -138,7 +142,7 @@
                                         <div class="timeline dark-shadow">
                                             <div class="timeline-item">
                                                 <div class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2022 - 2024
+                                                    <i class="fa fa-calendar"></i> 2022 - 2024 (2 Year)
                                                 </div>
                                                 <h4 class="timeline-title">Master of Computer Applications</h4>
                                                 <p class="timeline-text">Lorem ipsum dolor sit amet consectetur
@@ -150,7 +154,7 @@
                                         <div class="timeline dark-shadow">
                                             <div class="timeline-item">
                                                 <div class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2018 - 2021
+                                                    <i class="fa fa-calendar"></i> 2018 - 2021 (3 Year)
                                                 </div>
                                                 <h4 class="timeline-title">Bachelor of Computer Applications</h4>
                                                 <p class="timeline-text">Lorem ipsum dolor sit amet consectetur,
@@ -234,7 +238,7 @@
                                 <div class="icon">
                                     <i class="fa-solid fa-user-tie"></i>
                                 </div>
-                                <h4>Database Administrator</h4>
+                                <h4>Hosting and Maintenance</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere, obcaecati
                                 </p>
                             </div>
@@ -288,6 +292,11 @@
                             <div class="portfolio-item-inner">
                                 <div class="portfolio-image">
                                     <img src="./images/Project1.jpg" alt="">
+                                    <!-- <div class="layer padd-15">
+                                        <h3>Expense Tracker</h3>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, impedit!</p>
+                                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -297,6 +306,11 @@
                             <div class="portfolio-item-inner">
                                 <div class="portfolio-image">
                                     <img src="./images/Project1.jpg" alt="">
+                                    <!-- <div class="layer padd-15">
+                                        <h3>Expense Tracker</h3>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, impedit!</p>
+                                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -398,26 +412,20 @@
                                         <input type="email" class="form-control" placeholder="Email">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject">
-                                        </div>
+
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea name="" class="form-control" id=""
-                                                placeholder="Message"></textarea>
-                                        </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <button type="submit" class="btn">Send Message</button>
-                                        </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn">Send Message</button>
                                     </div>
                                 </div>
                             </div>
@@ -427,11 +435,28 @@
             </section>
             <!-- >>>>> Contact Section End <<<<< -->
         </div>
-    </div>
-    <!-- === Main Content Part End === -->
+        <!-- === Main Content Part End === -->
     </div>
     <!-- === Main Container End Here === -->
 
+    <!-- === Style Switcher Start === -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- === Style Switcher End === -->
 
     <!-- Link JacaScript File -->
     <script src="/javascript/scripts.js"></script>

@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     /* Background Colours */
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
     /* Text Colours */
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
 
 }
 
 /* Universal Selection */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,20 +21,21 @@
 }
 
 /* Body Selection */
-body{
+body {
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins','Times New Roman',sans-serif;
+    font-family: 'Poppins', 'Times New Roman', sans-serif;
 }
 
-::before,::after{
+::before,
+::after {
     box-sizing: border-box;
 }
 
 /* Sidebar Styling */
-.sidebar{
+.sidebar {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 270px;
@@ -46,18 +47,21 @@ body{
     padding: 30px;
     position: fixed;
     z-index: 10;
-    
+
 }
+
 ul {
     list-style: none;
 }
-.sidebar .logo{
-    position:absolute;
+
+.sidebar .logo {
+    position: absolute;
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
 }
-.sidebar .logo a{
+
+.sidebar .logo a {
     color: var(--text-black-900);
     font-weight: 700;
     padding: 15px 20px;
@@ -65,11 +69,13 @@ ul {
     letter-spacing: 3px;
     position: relative;
 }
-.sidebar .logo a span{
+
+.sidebar .logo a span {
     font-family: 'Clicker', cursive;
     font-size: 40px;
 }
-.sidebar .logo a::before{
+
+.sidebar .logo a::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -79,6 +85,7 @@ ul {
     border-bottom: 5px solid var(--face-color);
     border-left: 5px solid var(--face-color);
 }
+
 .sidebar .logo a::after {
     content: '';
     position: absolute;
@@ -90,14 +97,16 @@ ul {
     border-right: 5px solid var(--face-color);
 }
 
-.sidebar .navbar{
+.sidebar .navbar {
     margin-top: 90px;
 }
-.sidebar .navbar li{
+
+.sidebar .navbar li {
     margin-bottom: 20px;
     display: block;
 }
-.sidebar .navbar li a{
+
+.sidebar .navbar li a {
     font-size: 16px;
     font-weight: 600;
     display: block;
@@ -105,26 +114,44 @@ ul {
     padding: 5px 15px;
     border-bottom: 2px solid var(--bg-black-50);
 }
-.sidebar .navbar li i{
+
+.sidebar .navbar li i {
     margin-right: 15px;
 }
-.sidebar .navbar li a.active{
+
+.sidebar .navbar li a.active {
     color: var(--face-color);
 }
 
 /* Extra Social Media */
-.social-media{ 
+.sidebar .social-media {
     margin-top: 60px;
 }
-.social-icons{
+
+.sidebar .social-icons {
     display: flex;
     position: relative;
     column-gap: 15px;
     padding: 15px 20px;
 }
-.social-icons i{
+
+/* .sidebar .social-icons li{
+    display: block;
+    padding: 7px;
+    border-radius: 50%;
+    line-height: 25px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-50);
+    transition: all 0.3s ease-out;
+}
+.sidebar .social-icons i:hover{
+    color: var(--face-color
+    );
+} */
+.sidebar .social-icons i {
     font-size: 25px;
     color: var(--text-black-900);
+
 }
 
 /* Section Divisions and Some pre-built*/
@@ -135,38 +162,45 @@ ul {
     padding: 0 20px;
     opacity: 1;
 }
-.main-contents{
+
+.main-contents {
     padding-left: 270px;
 }
-.container{
+
+.container {
     max-width: 1100px;
     width: 100%;
     margin: auto;
 }
-.section .container{
+
+.section .container {
     padding: 60px 0;
 }
-.title-section{
+
+.title-section {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
 }
-.title-section h2{
+
+.title-section h2 {
     font-size: 40px;
     font-weight: 700;
     color: var(--text-black-900);
     position: relative;
 }
-.title-section h2::before{
+
+.title-section h2::before {
     content: '';
     height: 4px;
-    width:70px;
+    width: 70px;
     left: 0;
     top: 100%;
     position: absolute;
     background-color: var(--face-color);
 }
-.title-section h2::after{
+
+.title-section h2::after {
     content: '';
     height: 4px;
     width: 35px;
@@ -176,18 +210,21 @@ ul {
     position: absolute;
     background-color: var(--face-color);
 }
-.padd-15{
+
+.padd-15 {
     padding-left: 15px;
     padding-right: 15px;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
 }
-.btn{
+
+.btn {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 30px;
@@ -199,47 +236,57 @@ ul {
     white-space: nowrap;
     transition: all 0.3s ease;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.05);
 }
-.dark-shadow{
+
+.dark-shadow {
     box-shadow: 0 0 20px rgba(59, 56, 103, 0.25);
 }
+
 /* Section Divisions and Some pre-built End*/
 
 /* Home Section Styling */
-.home{
+.home {
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900);
 }
-.home .home-info{
+
+.home .home-info {
     flex: 0 0 60%;
     max-width: 60%;
 }
-.home .home-info h4{
+
+.home .home-info h4 {
     font-size: 16px;
     font-weight: 600;
     color: var(--face-color);
 }
-h2.hello{
+
+h2.hello {
     font-size: 35px;
     margin: 15px 0;
 }
-h2.hello span{
+
+h2.hello span {
     font-size: 40px;
     font-weight: 700;
     font-family: 'Clicker Script', cursive;
     color: var(--face-color);
 }
-h3.my-profession{
+
+h3.my-profession {
     font-size: 28px;
     margin: 15px 0;
 }
-.typing{
+
+.typing {
     color: var(--face-color);
 }
-.home-info p{
+
+.home-info p {
     font-size: 16px;
     margin-bottom: 60px;
     color: var(--text-black-700);
@@ -250,13 +297,15 @@ h3.my-profession{
     margin: auto;
     border-radius: 5px;
 }
-.home .home-img{
+
+.home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
 }
-.home-img::after{
+
+.home-img::after {
     content: '';
     position: absolute;
     width: 80px;
@@ -266,6 +315,7 @@ h3.my-profession{
     border-bottom: 10px solid var(--face-color);
     border-right: 10px solid var(--face-color);
 }
+
 .home-img::before {
     content: '';
     position: absolute;
@@ -278,57 +328,68 @@ h3.my-profession{
 }
 
 /* About Section Styling */
-.about .about-content{
+.about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about .about-content .about-text{
+
+.about .about-content .about-text {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about .about-content .about-text h3{
+
+.about .about-content .about-text h3 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
     color: var(--text-black-900);
 }
-.about .about-content .about-text h3 span{
+
+.about .about-content .about-text h3 span {
     color: var(--face-color);
 }
-.about .about-content .about-text p{
+
+.about .about-content .about-text p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
 }
-.about .about-content .personal-info{
-    margin-top: 40px ;
+
+.about .about-content .personal-info {
+    margin-top: 40px;
     flex: 0 0 60%;
     max-width: 60%;
 }
-.about .about-content .personal-info .info-item{
+
+.about .about-content .personal-info .info-item {
     flex: 0 0 60%;
     max-width: 50%;
 }
-.about .about-content .personal-info .info-item p{
+
+.about .about-content .personal-info .info-item p {
     font-size: 16px;
     font-weight: 600;
     padding: 10px 0;
     color: var(--text-black-900);
     border-bottom: 1.5px solid var(--bg-black-50);
 }
-.about .about-content .personal-info .info-item p span{
+
+.about .about-content .personal-info .info-item p span {
     font-weight: 400;
     color: var(--text-black-700);
     margin-left: 5px;
     display: inline-block;
 }
-.about .about-content .personal-info .buttons{
+
+.about .about-content .personal-info .buttons {
     margin-top: 30px;
 }
-.about .about-content .personal-info .buttons .btn{
+
+.about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
     margin-right: 20px;
 }
+
 /* Thinking for a Animated Shape */
 /* .effective-shape{
     width: 250px;
@@ -337,26 +398,30 @@ h3.my-profession{
 
 } */
 
-.about .about-content .education{
+.about .about-content .education {
     margin-top: 40px;
     flex: 0 0 100%;
 }
-.about .about-content .education h3.title{
+
+.about .about-content .education h3.title {
     display: inline-block;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
     color: var(--text-black-900);
 }
-.about .about-content .education h3.title i{
+
+.about .about-content .education h3.title i {
     margin-right: 10px;
 }
-.about .about-content .education .timeline-cards{
+
+.about .about-content .education .timeline-cards {
     display: flex;
     flex-direction: row;
     column-gap: 30px;
 }
-.about .about-content .education .timeline{
+
+.about .about-content .education .timeline {
     background-color: var(--bg-black-100);
     padding: 30px 30px;
     border: 1.5px solid var(--bg-black-50);
@@ -364,23 +429,27 @@ h3.my-profession{
     width: 100%;
     border-bottom: 3px solid var(--face-color);
 }
-.about .about-content .education .timeline .timeline-item .timeline-date{
+
+.about .about-content .education .timeline .timeline-item .timeline-date {
     margin-bottom: 15px;
     color: var(--text-black-700);
     font-weight: 400;
     font-size: 14px;
 }
-.about .about-content .education .timeline .timeline-item .timeline-date .fa{
+
+.about .about-content .education .timeline .timeline-item .timeline-date .fa {
     margin-right: 5px;
 }
-.about .about-content .education .timeline .timeline-item h4.timeline-title{
+
+.about .about-content .education .timeline .timeline-item h4.timeline-title {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
     color: var(--text-black-900);
 }
-.about .about-content .education .timeline .timeline-item .timeline-text{
+
+.about .about-content .education .timeline .timeline-item .timeline-text {
     font-size: 16;
     line-height: 25px;
     text-align: justify;
@@ -388,26 +457,35 @@ h3.my-profession{
 }
 
 /* Services Styling */
-.services .container{
+.services .container {
     padding-bottom: 40px;
 }
-.services .service-item{
+
+.services .service-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
-.services .service-item .service-item-inner{
+
+.services .service-item .service-item-inner {
     background: var(--bg-black-100);
     border: 1.5px solid var(--bg-black-50);
     padding: 30px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
-    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(59, 56, 103, 0.25);
+    transition: all 0.5s ease;
 }
-.services .service-item .service-item-inner:hover{
+
+.services .service-item .service-item-inner:hover {
     box-shadow: 0 0 20px rgba(59, 56, 103, 0.25);
 }
-.services .service-item .service-item-inner .icon{
+
+.services .service-item .service-item-inner:hover {
+    transform: translateY(-10px);
+}
+
+.services .service-item .service-item-inner .icon {
     height: 60px;
     width: 60px;
     margin: 0 auto 30px;
@@ -415,27 +493,32 @@ h3.my-profession{
     border-radius: 50%;
     transition: all 0.3s ease;
 }
-.services .service-item .service-item-inner .icon .fa-solid{
+
+.services .service-item .service-item-inner .icon .fa-solid {
     font-size: 40px;
     line-height: 60px;
     color: var(--face-color);
     transition: all 0.3s ease;
 }
-.services .service-item .service-item-inner .icon:hover{
+
+.services .service-item .service-item-inner .icon:hover {
     background: var(--face-color);
 }
+
 .services .service-item .service-item-inner .icon .fa-solid:hover {
     font-size: 25px;
     color: var(--bg-black-900);
 }
-.services .service-item .service-item-inner h4{
+
+.services .service-item .service-item-inner h4 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px;
     color: var(--text-black-900);
     text-transform: capitalize;
 }
-.services .service-item .service-item-inner p{
+
+.services .service-item .service-item-inner p {
     font-size: 16;
     font-weight: 500;
     color: var(--text-black-700);
@@ -443,7 +526,7 @@ h3.my-profession{
 }
 
 /* Portfolio Section Styling */
-.portfolio .portfolio-heading{
+.portfolio .portfolio-heading {
     flex: 0 0 100%;
     max-width: 100%;
     display: inline-block;
@@ -452,97 +535,223 @@ h3.my-profession{
     margin-bottom: 40px;
     color: var(--text-black-900);
 }
-.portfolio .portfolio-heading i{
+
+.portfolio .portfolio-heading i {
     margin-right: 10px;
 }
-.portfolio .portfolio-item{
+
+.portfolio .portfolio-item {
     flex: 0 0 33.33%;
     max-width: 33%;
     margin-bottom: 30px;
+    position: relative;
 }
-.portfolio .portfolio-item .portfolio-item-inner img{
+
+.portfolio .portfolio-item .portfolio-item-inner img {
     max-width: 100%;
     display: block;
+    transition: transform 0.3s;
 }
-.portfolio .portfolio-item .portfolio-item-inner{
-    border: 5px solid var(--bg-black-100);
+
+.portfolio .portfolio-item .portfolio-item-inner:hover img {
+    transform: scale(1.1);
+}
+
+/* .portfolio .portfolio-item .portfolio-item-inner .portfolio-image .layer {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #9619f6);
     border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    transition: height 0.7s;
+} */
+
+.portfolio .portfolio-item .portfolio-item-inner {
+    border: 5px solid var(--bg-black-100);
+    border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
 }
 
 /* Contact Section Styling */
-.contact .contact-title{
+.contact .contact-title {
     font-size: 24px;
     color: var(--face-color);
     text-align: center;
     margin-bottom: 20px;
 }
+
 .contact .contact-sub-title {
     font-size: 16px;
     text-align: center;
     color: var(--text-black-900);
     margin-bottom: 50px;
 }
-.contact .contact-info-item{
+
+.contact .contact-info-item {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
     margin-bottom: 50PX;
 }
-.contact .contact-info-item .icon{
+
+.contact .contact-info-item .icon {
     display: block;
 }
-.contact .contact-info-item .icon .fa-solid{
+
+.contact .contact-info-item .icon .fa-solid {
     font-size: 24px;
     color: var(--face-color);
 }
-.contact .contact-info-item h4{
+
+.contact .contact-info-item h4 {
     font-size: 16px;
     font-weight: 700;
     color: var(--text-black-900);
     margin: 15px 0 5px;
     text-transform: capitalize;
 }
-.contact .contact-info-item p{
+
+.contact .contact-info-item p {
     font-size: 14px;
     font-weight: 500;
     line-height: 25px;
     color: var(--text-black-700);
 }
-.contact .contact-form{
+
+.contact .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.contact .contact-form .col-6{
+
+.contact .contact-form .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
 }
-.contact .contact-form .col-12{
-    flex: 100%;
+
+.contact .contact-form .col-12 {
+    flex: 0 0 100%;
     max-width: 100%;
 }
-.contact .contact-form .form-item{
+
+.contact .contact-form .form-item {
     margin-bottom: 30px;
 }
-.contact .contact-form .form-item .form-control{
+
+.contact .contact-form .form-item .form-control {
     width: 100%;
     height: 50px;
     font-size: 16px;
     color: var(--text-black-700);
-    background:var(--bg-black-100);
+    background: var(--bg-black-100);
     border: 1.5px solid var(--bg-black-50);
     border-radius: 25px;
     padding: 15px 25px;
     transition: all 0.3s ease;
 }
-.contact .contact-form .form-item .form-control:focus{
+
+.contact .contact-form .form-item .form-control:focus {
     box-shadow: 0 0 20px rgba(59, 56, 103, 0.25);
 }
-.contact .contact-form .form-item textarea.form-control{
+
+.contact .contact-form .form-item textarea.form-control {
     height: 140px;
 }
-.contact .contact-form .btn{
+
+.contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
 }
+
+/* Media Queary Starts from Here  */
+/* For 1025px — 1200px: Desktops,
+large screens */
+@media(max-width:1200px) {
+    .sidebar {
+        left: -270px;
+    }
+
+    .main-contents {
+        padding-left: 0;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+/* 769px — 1024px: Small screens,
+laptops */
+@media(max-width:1024px) {
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+
+    .services .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .portfolio .portfolio-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .contact .contact-info-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* For 481px — 768px: iPads,
+Tablets */
+@media(max-width:768px) {
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-content .education .timeline-cards {
+        flex: 0 0 100%;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .services .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact .contact-form .btn {
+        margin-left: 25%;
+    }
+}
+
+/* For 320px — 480px: Mobile devices */
+@media(max-width:480px) {}
