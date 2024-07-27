@@ -20,6 +20,17 @@
     text-decoration: none;
 }
 
+/* Color for Dark mode */
+body.dark {
+    /* Background Colours */
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    /* Text Colours */
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+}
+
 /* Body Selection */
 body {
     line-height: 1.5;

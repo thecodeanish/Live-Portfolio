@@ -1,4 +1,4 @@
-.style-switcher{
+.style-switcher {
     position: fixed;
     right: 0;
     top: 40px;
@@ -9,10 +9,12 @@
     background: var(--bg-black-100);
     z-index: 101;
     transition: all 0.3s ease;
+    cursor: pointer;
     transform: translateX(100%);
-    
+
 }
-.style-switcher .s-icon{
+
+.style-switcher .s-icon {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -21,51 +23,66 @@
     background: var(--bg-black-100);
     color: var(--text-black-900);
     right: 100%;
-    border:1.5px solid var(--bg-black-50);
+    border: 1.5px solid var(--bg-black-50);
     margin-right: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
 }
-.style-switcher .s-icon i{ 
+
+.style-switcher.open {
+    transform: translateX(-25%);
+}
+
+.style-switcher .s-icon i {
     line-height: 40px;
 }
-.style-switcher .day-night{
+
+.style-switcher .day-night {
     margin-top: 50px;
 }
-.style-switcher .style-switcher-toggle{
+
+.style-switcher .style-switcher-toggle {
     top: 0;
 }
-.style-switcher h4{
+
+.style-switcher h4 {
     font-size: 16;
     font-weight: 600;
     margin: 0 0 10px;
     color: var(--text-black-700);
-    text-transform: capitalize;   
+    text-transform: capitalize;
 }
-.style-switcher .colors{
+
+.style-switcher .colors {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.style-switcher .colors span{
+
+.style-switcher .colors span {
     display: inline;
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
-.style-switcher .colors .color-1{
+
+.style-switcher .colors .color-1 {
     background: #433D8B;
 }
-.style-switcher .colors .color-2{
+
+.style-switcher .colors .color-2 {
     background: #189AB4;
 }
-.style-switcher .colors .color-3{
+
+.style-switcher .colors .color-3 {
     background: #3B30AF;
 }
-.style-switcher .colors .color-4{
+
+.style-switcher .colors .color-4 {
     background: #8189ff;
 }
-.style-switcher .colors .color-5{
+
+.style-switcher .colors .color-5 {
     background: #167D7F;
 }

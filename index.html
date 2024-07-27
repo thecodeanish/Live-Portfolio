@@ -8,9 +8,15 @@
     <!-- Link CSS files -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- link face color css file -->
-    <link rel="stylesheet" href="/css/face-color.css">
     <!-- link font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Style Switcher Colors -->
+    <link rel="stylesheet" href="/css/face-color.css">
+    <link rel="stylesheet" href="/css/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="/css/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/css/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/css/color-5.css" class="alternate-style" title="color-5" disabled>
     <!-- Link Style switcher css file -->
     <link rel="stylesheet" href="/css/style-switcher.css">
     <!-- Auto Typing library in Home section -->
@@ -29,10 +35,10 @@
                 <ul>
                     <li><a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
                     <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
-                    <li><a href="#"><i class="fa-solid fa-code"></i>Skills</a></li>
-                    <li><a href="#"><i class="fa-solid fa-list"></i>Services</a></li>
-                    <li><a href="#"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
-                    <li><a href="#"><i class="fa-solid fa-comments"></i>Contact</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-code"></i>Skills</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-list"></i>Services</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
                 </ul>
             </div>
             <div class="social-media">
@@ -53,7 +59,7 @@
         <div class="main-contents">
 
             <!-- >>>>> Home Section start <<<<< -->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -61,9 +67,8 @@
                             <h2 class="hello">I am Anish <span class="name">From India</span></h2>
                             <h2 class="hello">This is my <span class="name">Favourite &#9829; Work </span></h2>
                             <h3 class="my-profession">I'm a <span class="typing"></span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi esse, impedit
-                                dolorem ratione provident officia nostrum blanditiis error quasi possimus labore itaque
-                                eos temporibus explicabo. Ea illum neque possimus!</p>
+                            <p>I am a Web Developer. My expertise is to create and design a very interactive website and
+                                provide awesome user interface or expertise and many more... </p>
                             <a href="#about" class="btn hire-me">More About Me</a>
                         </div>
                         <div class="home-img padd-15">
@@ -75,7 +80,7 @@
             <!-- >>>>> Home Section End <<<<< -->
 
             <!-- >>>>> About Section Start <<<<< -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="title-section padd-15">
@@ -173,7 +178,7 @@
             <!-- >>>>> About Section End <<<<< -->
 
             <!-- >>>>> Skills Section Start <<<<< -->
-            <!-- <section class="skills section">
+            <!-- <section class="skills section" id="skills">
                 <div class="container">
                     <div class="row">
                         <div class="title-section">
@@ -185,7 +190,7 @@
             <!-- >>>>> Skills Section End <<<<< -->
 
             <!-- >>>>> Services Section Start  <<<<< -->
-            <section class="services section">
+            <section class="services section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="title-section padd-15">
@@ -276,7 +281,7 @@
             <!-- >>>>> Services Section End  <<<<< -->
 
             <!-- >>>>> Portfolio Section Start <<<<< -->
-            <section class="portfolio section">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="title-section padd-15">
@@ -357,7 +362,7 @@
             <!-- >>>>> Portfolio Section End <<<<< -->
 
             <!-- >>>>> Contact Section Start <<<<< -->
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="title-section padd-15">
@@ -445,7 +450,7 @@
             <i class="fas fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+            <i class="fas "></i>
         </div>
         <h4>Theme Colors</h4>
         <div class="colors">
@@ -460,6 +465,7 @@
 
     <!-- Link JacaScript File -->
     <script src="/javascript/scripts.js"></script>
+    <script src="/javascript/styleSwitcher.js"></script>
 </body>
 
 </html>
