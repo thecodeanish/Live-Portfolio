@@ -430,6 +430,7 @@ h3.my-profession {
     display: flex;
     flex-direction: row;
     column-gap: 30px;
+
 }
 
 .about .about-content .education .timeline {
@@ -439,6 +440,9 @@ h3.my-profession {
     border-radius: 10px;
     width: 100%;
     border-bottom: 3px solid var(--face-color);
+    height: 300px;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .about .about-content .education .timeline .timeline-item .timeline-date {
@@ -466,6 +470,15 @@ h3.my-profession {
     text-align: justify;
     color: var(--text-black-700);
 }
+
+/* Card Overflow */
+.about .about-content .education .timeline .timeline-item p.timeline-text {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* Skils Styling */
+
 
 /* Services Styling */
 .services .container {
