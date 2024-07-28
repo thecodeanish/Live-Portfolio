@@ -440,7 +440,7 @@ h3.my-profession {
     border-radius: 10px;
     width: 100%;
     border-bottom: 3px solid var(--face-color);
-    height: 300px;
+    height: 310px;
     overflow: scroll;
     scrollbar-width: none;
 }
@@ -499,6 +499,7 @@ h3.my-profession {
     text-align: center;
     box-shadow: 0 0 20px rgba(59, 56, 103, 0.25);
     transition: all 0.5s ease;
+    height: 290px;
 }
 
 .services .service-item .service-item-inner:hover {
@@ -773,7 +774,8 @@ Tablets */
     }
 
     .contact .contact-form .btn {
-        margin-left: 25%;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 }
 
