@@ -58,6 +58,7 @@ body {
     padding: 30px;
     position: fixed;
     z-index: 10;
+    transition: all 0.3s ease;
 
 }
 
@@ -121,6 +122,11 @@ ul {
     display: none;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-toggler.open span {
+    background-color: transparent;
 }
 
 .sidebar .nav-toggler span {
@@ -141,6 +147,11 @@ ul {
     left: 0;
 }
 
+.sidebar .nav-toggler.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
 .sidebar .nav-toggler span::after {
     content: '';
     width: 18px;
@@ -149,6 +160,11 @@ ul {
     position: absolute;
     top: 6px;
     left: 0;
+}
+
+.sidebar .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 .sidebar .navbar {
@@ -184,24 +200,35 @@ ul {
 
 .sidebar .social-icons {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    column-gap: 15px;
+    column-gap: 10px;
     padding: 15px 20px;
+
 }
 
-/* .sidebar .social-icons li{
-    display: block;
+.sidebar .social-icons li {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar .social-icons li {
+    position: relative;
     padding: 7px;
     border-radius: 50%;
-    line-height: 25px;
-    border: 1px solid var(--bg-black-50);
-    background: var(--bg-black-50);
+    border: 1.5px solid var(--bg-black-50);
     transition: all 0.3s ease-out;
 }
-.sidebar .social-icons i:hover{
-    color: var(--face-color
-    );
-} */
+
+.sidebar .social-icons li i:hover {
+    color: var(--face-color);
+}
+
+.sidebar .social-icons li:hover {
+    transform: scale(1.2);
+}
+
 .sidebar .social-icons i {
     font-size: 25px;
     color: var(--text-black-900);
@@ -223,6 +250,7 @@ ul {
     z-index: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all 0.3s ease;
 }
 
 .section.back-section {
@@ -465,11 +493,10 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
-    margin-right: 20px;
 }
 
 .about .about-content .skills {
-    margin-top: 40px;
+    margin-top: 30px;
     flex: 0 0 40%;
     max-width: 40%;
 }
@@ -776,6 +803,11 @@ h3.my-profession {
     max-width: 50%;
 }
 
+.form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
 .contact .contact-form .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -827,13 +859,27 @@ large screens */
         left: 30px;
     }
 
+    .sidebar .nav-toggler.open {
+        left: 300px;
+    }
+
     .section {
         left: 0;
+    }
+
+    .section.open {
+        left: 270px;
     }
 
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
+    }
+
+    .about .about-content .skills {
+        flex: 0 0 100%;
+        margin-left: 0;
+        max-width: 100%;
     }
 }
 
@@ -868,10 +914,13 @@ laptops */
 /* For 481px — 768px: iPads,
 Tablets */
 @media(max-width:768px) {
+
+    .about .about-content .skills,
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
 
     .about .about-content .education .timeline-cards {
         flex: 0 0 100%;

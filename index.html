@@ -76,7 +76,7 @@
                             <h3 class="my-profession">I'm a <span class="typing"></span></h3>
                             <p>I am a Web Developer. My expertise is to create and design a very interactive website and
                                 provide awesome user interface or expertise and many more... </p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <a href="/images/AnishCV.pdf" class="btn" download>Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="/images/homeImgBgBlack.png" alt="this is me">
@@ -141,7 +141,6 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="/images/AnishCV.pdf" class="btn" download>Download CV</a>
                                             <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
@@ -225,7 +224,7 @@
             <!-- >>>>> About Section End <<<<< -->
 
             <!-- >>>>> Skills Section Start <<<<< -->
-            <section class="skills section" id="skills">
+            <!-- <section class="skills section" id="skills">
                 <div class="container">
                     <div class="row">
                         <div class="title-section">
@@ -233,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- >>>>> Skills Section End <<<<< -->
 
             <!-- >>>>> Services Section Start  <<<<< -->
@@ -459,23 +458,24 @@
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Full Name">
+                                        <input type="text" class="form-control" id="fname" placeholder="Full Name">
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" id="mail" placeholder="Email">
                                     </div>
                                 </div>
 
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
                                     </div>
                                 </div>
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                        <textarea name="" class="form-control" id="message"
+                                            placeholder="Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-item col-12 padd-15">
@@ -522,6 +522,7 @@
     <!-- Link JacaScript File -->
     <script src="/javascript/scripts.js"></script>
     <script src="/javascript/styleSwitcher.js"></script>
+    <script src="/javascript/mailForm.js"></script>
 </body>
 
 </html>

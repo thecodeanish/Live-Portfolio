@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ===> Script for Sidebar Start <=== */
 const sidebar = document.querySelector(".sidebar");
-const navList = sidebar.querySelectorAll("li");
-const totalNavList = navList.length;
+const navList = sidebar.querySelectorAll("li"),
+  totalNavList = navList.length;
 const allSection = document.querySelectorAll(".section"),
   totalSection = allSection.length;
 
@@ -37,6 +37,9 @@ for (let i = 0; i < totalNavList; i++) {
     }
     this.classList.add("active");
     showSection(this);
+    if (window.innerWidth < 1200) {
+      sidebarTogglerSectionBtn();
+    }
   });
 }
 function showSection(element) {
@@ -47,10 +50,36 @@ function showSection(element) {
   document.querySelector("#" + target).classList.add("active");
 }
 // Script for Nav Toggler
+
 const navTogglerBtn = document.querySelector(".nav-toggler");
-navTogglerBtn.addEventListener("clicl", () => {
+const Sidebar = document.querySelector(".sidebar");
+navTogglerBtn.addEventListener("click", () => {
   sidebarTogglerSectionBtn();
 });
 function sidebarTogglerSectionBtn() {
-  sidebar.classList.toggle("open");
+  Sidebar.classList.toggle("open");
+  navTogglerBtn.classList.toggle("open");
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.toggle("open");
+  }
 }
+
+// Script for Hire Me button
+const hireMe = document.querySelector(".hire-me");
+function updateNav(element) {
+  for (let i = 0; i < totalNavList; i++) {
+    navList[i].querySelector("a").classList.remove("active");
+    const target = element.getAttribute("href").split("#")[1];
+    if (
+      target ===
+      navList[i].querySelector("a").getAttribute("href").split("#")[1]
+    ) {
+      navList[i].querySelector("a").classList.add("active");
+    }
+  }
+}
+hireMe.addEventListener("click", function () {
+  // console.log(this);
+  showSection(this);
+  updateNav(this);
+});
