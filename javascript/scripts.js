@@ -53,7 +53,7 @@ function showSection(element) {
 
 const navTogglerBtn = document.querySelector(".nav-toggler");
 const Sidebar = document.querySelector(".sidebar");
-navTogglerBtn.addEventListener("click", () => {
+navTogglerBtn.addEventListener("click", function () {
   sidebarTogglerSectionBtn();
 });
 function sidebarTogglerSectionBtn() {
