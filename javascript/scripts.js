@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
 /* ===> Script for Home auto typing section End <=== */
 
 /* ===> Script for Sidebar Start <=== */
-const sidebar = document.querySelector(".sidebar");
-const navList = sidebar.querySelectorAll("li"),
-  totalNavList = navList.length;
+const sidebar = document.querySelector(".sidebar"); // Taking Sidebar
+const navList = sidebar.querySelectorAll("li"), //Taking Navigation tab
+  totalNavList = navList.length; // Total of Navigation tab links
 const allSection = document.querySelectorAll(".section"),
   totalSection = allSection.length;
 
 for (let i = 0; i < totalNavList; i++) {
-  const a = navList[i].querySelector("a");
+  const a = navList[i].querySelector("a"); //Specify the particular link or anchor
   a.addEventListener("click", function () {
     for (let i = 0; i < totalSection; i++) {
       allSection[i].classList.remove("back-section");
@@ -49,6 +49,7 @@ function showSection(element) {
   const target = element.getAttribute("href").split("#")[1];
   document.querySelector("#" + target).classList.add("active");
 }
+
 // Script for Nav Toggler
 
 const navTogglerBtn = document.querySelector(".nav-toggler");

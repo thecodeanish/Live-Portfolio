@@ -797,14 +797,15 @@ h3.my-profession {
     max-width: 100%;
 }
 
-.contact .contact-form .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.form {
+.contact .contact-form .form-bd {
     flex: 0 0 100%;
     max-width: 100%;
+}
+
+.contact .contact-form .form-bd .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+
 }
 
 .contact .contact-form .col-12 {

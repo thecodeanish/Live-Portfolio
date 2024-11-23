@@ -148,7 +148,7 @@
                                 <div class="skills padd-15">
                                     <div class="row">
                                         <div class="skill-item padd-15">
-                                            <h5>JacaScript</h5>
+                                            <h5>JavaScript</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 66%;"></div>
                                                 <div class="skill-percent">66%</div>
@@ -457,38 +457,44 @@
                     <div class="row">
                         <div class="contact-form padd-15">
                             <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="fname" placeholder="Full Name">
-                                        <!-- <span id="name-error"> name is required</span> -->
+                                <form action="https://api.web3forms.com/submit" method="POST" class="form-bd">
+                                    <input type="hidden" name="access_key" value="58624c9a-dc68-4f8b-a14e-7b7fe8202349">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="fullname" class="form-control" id="fname"
+                                                placeholder="Full Name" required>
+                                            <!-- <span id="name-error"> name is required</span> -->
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="mail" placeholder="Email">
-                                        <!-- <span id="email-error"> email id is required</span> -->
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" id="mail"
+                                                placeholder="Email" required>
+                                            <!-- <span id="email-error"> email id is required</span> -->
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <!-- <span id="subject-error"> subject is required</span> -->
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" class="form-control" id="subject"
+                                                placeholder="Subject" required>
+                                            <!-- <span id="subject-error"> subject is required</span> -->
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="message"
-                                            placeholder="Message"></textarea>
-                                        <!-- <span id="message-error"> name is required</span> -->
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message"
+                                                placeholder="Message"></textarea>
+                                            <!-- <span id="message-error"> name is required</span> -->
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Send Message</button>
-                                        <!-- <span id="submit-error">Plese fill required field</span> -->
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn">Send Message</button>
+                                            <!-- <span id="submit-error">Plese fill required field</span> -->
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -525,6 +531,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
         integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Link JacaScript File -->
     <script src="/javascript/scripts.js"></script>
     <script src="/javascript/styleSwitcher.js"></script>
